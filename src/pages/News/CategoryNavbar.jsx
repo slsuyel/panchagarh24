@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
 import useCategories from '../../hooks/useCategories';
 import { organizeCategories } from '../../utils/functions';
-
+import logo from '../../assets/images/logo.jpeg'
 const CategoryNavbar = () => {
     const { categories, isLoading } = useCategories();
 
@@ -19,15 +19,15 @@ const CategoryNavbar = () => {
 
                 <li className="nav-item bg-white" >
                     <Link className='nav-link text-white px-3'
-                        to='/news'> <img src="https://seeklogo.com/images/P/prothom-alo-logo-0B7FCEB8DE-seeklogo.com.png" alt="" width={100} />
-                    </Link>
-                </li>
-                <li className="nav-item" >
-                    <Link className='nav-link text-white'
-                        to='/archive'> আর্কাইভ
+                        to='/news'> <img src={logo} alt="" width={180} />
                     </Link>
                 </li>
 
+                <li className="nav-item" >
+                    <Link className='nav-link text-white'
+                        to='/news'> প্রচ্ছদ
+                    </Link>
+                </li>
                 {reArrCategories.map((category) => (
                     <li className="nav-item" key={category.slug}>
                         {category.children && category.children.length > 0 ? (
@@ -55,12 +55,12 @@ const CategoryNavbar = () => {
                         )}
                     </li>
                 ))}
-
                 <li className="nav-item" >
                     <Link className='nav-link text-white'
-                        to='/news'> প্রচ্ছদ
+                        to='/archive'> আর্কাইভ
                     </Link>
                 </li>
+
             </ul>
         </nav>
     );

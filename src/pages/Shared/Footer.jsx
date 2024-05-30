@@ -1,6 +1,6 @@
 import getgp from '../../assets/images/get-it-on-play.png'
 import getapp from '../../assets/images/get-it-on-apple.png'
-// import footerImg from '../../assets/images/footer-logo.png'
+import footerImg from '../../assets/images/logo.jpeg'
 
 import SocialIconsMenu from '../../components/SocialIconsMenu';
 import { Link } from 'react-router-dom';
@@ -16,8 +16,8 @@ const Footer = () => {
 
             <div className="row w-100 mx-auto" >
                 <div className='col-md-2 my-auto text-center'>
-                    <img src={'https://seeklogo.com/images/P/prothom-alo-logo-0B7FCEB8DE-seeklogo.com.png'} alt="footerImg" width={140} />
-                    {/* <img src={footerImg} alt="footerImg" width={100} /> */}
+                    {/* <img src={'https://seeklogo.com/images/P/prothom-alo-logo-0B7FCEB8DE-seeklogo.com.png'} alt="footerImg" width={140} /> */}
+                    <img src={footerImg} alt="footerImg" width={180} />
                 </div>
 
 

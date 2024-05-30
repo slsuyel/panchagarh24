@@ -101,7 +101,7 @@ import { Link } from 'react-router-dom';
 import useCategories from '../../hooks/useCategories';
 import { organizeCategories } from '../../utils/functions';
 
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.jpeg';
 
 const CategoryCanvas = () => {
     const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
@@ -126,8 +126,8 @@ const CategoryCanvas = () => {
             </button>
 
             <div className={`w-50 offcanvas offcanvas-start${isOffcanvasOpen ? ' show' : ''}`} tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{ background: '#000028', zIndex: '999' }}>
-                <div className="justify-content-around offcanvas-header p-0">
-                    <img src={logo} width={80} alt="" className="img-circle img-fluid m-2" />
+                <div className="justify-content-around offcanvas-header bg-white">
+                    <img src={logo} width={180} alt="" className="img-fluid " />
                     <button type="button" className="bg-warning btn-close opacity-100 text-reset" onClick={toggleOffcanvas}></button>
                 </div>
                 <div className="offcanvas-body mt-1">

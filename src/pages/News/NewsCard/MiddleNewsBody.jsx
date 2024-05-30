@@ -30,10 +30,10 @@ const MiddleNewsBody = () => {
 
             <div className='row mx-auto w-100'>
                 <div className="col-md-6 p-0">
-                    <Link to={`/news/${data[0].slug}`} className='text-decoration-none '>
+                    <Link to={`/news/${data[0]?.slug}`} className='text-decoration-none '>
                         <div className="img-contain rounded-1">
                             <img
-                                src={data[0].banner}
+                                src={data[0]?.banner}
                                 alt="Zoomable Image"
                             />
 
@@ -43,11 +43,11 @@ const MiddleNewsBody = () => {
 
                             <h2 className="fs-4 fw-bold lh-1 mb-0 text-dark">
 
-                                {data[0].title}
+                                {data[0]?.title}
                             </h2>
-                            <p style={{ color: "#243ae2" }} className='mb-0'> {data[0].date}</p>
+                            <p style={{ color: "#243ae2" }} className='mb-0'> {data[0]?.date}</p>
 
-                            <p className='fs-6 mb-0 text-secondary' dangerouslySetInnerHTML={{ __html: data[0].content.slice(0, 100) }}></p>
+                            <p className='fs-6 mb-0 text-secondary' dangerouslySetInnerHTML={{ __html: data[0]?.content.slice(0, 100) }}></p>
 
                         </div>
                     </Link>
