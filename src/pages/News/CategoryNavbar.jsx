@@ -24,7 +24,7 @@ const CategoryNavbar = () => {
                 </li>
                 <li className="nav-item" >
                     <Link className='nav-link text-white'
-                        to='/news'> প্রচ্ছদ
+                        to='/archive'> আর্কাইভ
                     </Link>
                 </li>
 
@@ -55,6 +55,12 @@ const CategoryNavbar = () => {
                         )}
                     </li>
                 ))}
+
+                <li className="nav-item" >
+                    <Link className='nav-link text-white'
+                        to='/news'> প্রচ্ছদ
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
