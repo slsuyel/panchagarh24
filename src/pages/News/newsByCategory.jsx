@@ -52,7 +52,7 @@ const NewsByCategory = () => {
 
                 {data.length == 0 && <div className="card">
                     <h3 className="text-center py-5 ">No data in this category</h3>
-                    <RelatedNews slug={'obilmbe-gajay-zuddhbirtir-ahwan-janiye-niraptta-prishde-prstab-pas'} />
+                    <RelatedNews slug={'obilmbe-gajay-zuddhbirtir-ahwan-janiye-niraptta-prishde-prstab-pas' | ""} />
                 </div>}
 
                 <Link to={`/news/${data[0]?.slug}`} className={data.length <= 0 ? 'd-none ' : ''}>

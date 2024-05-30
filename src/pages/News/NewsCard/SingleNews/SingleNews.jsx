@@ -98,7 +98,7 @@ const SingleNews = () => {
 
                     <NewsTab />
                     <SideBarAdd img={"http://backend.newsnow24.com/storage/photos/shares/Ads/kishwan.gif"} />
-                    <RelatedNews slug={news.slug ? news.slug : 'obilmbe-gajay-zuddhbirtir-ahwan-janiye-niraptta-prishde-prstab-pas'} />
+                    <RelatedNews slug={news.slug ? news.slug : ''} />
                 </div>
                 <EduSportsEconomy />
             </div>
