@@ -49,7 +49,7 @@ const CategoryNavbar = () => {
                                 </Dropdown.Menu>
                             </Dropdown>
                         ) : (
-                            <Link className="nav-link text-white" to={`/news/category/${category.slug}`}>
+                            <Link className="nav-link text-white mx-1" to={`/news/category/${category.slug}`}>
                                 {category.label}
                             </Link>
                         )}
