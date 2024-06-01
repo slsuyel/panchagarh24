@@ -20,9 +20,7 @@ const MiddleAdd = ({ title }) => {
 
 
 
-            <div>
-                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_735/https://www.channeltwenty.com/wp-content/uploads/2022/11/RN-Trading-3.jpg" alt="" className='img-fluid' />
-            </div>
+           
         </div>
     );
 };

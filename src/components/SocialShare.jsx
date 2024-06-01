@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 const SocialShare = ({ title, slug }) => {
 
     const shareText = title
-    const shareUrl = `https://shared.channeltwenty.com/news/${slug}`
+    const shareUrl = `https://shared.panchagarh24.com/news/${slug}`
     const shareOnFacebook = () => {
         const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
         window.open(facebookUrl, '_blank');

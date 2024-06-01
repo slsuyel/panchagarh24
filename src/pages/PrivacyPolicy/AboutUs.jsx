@@ -13,10 +13,10 @@ const AboutUs = () => {
                 <br />
                 <h2 style={{ fontFamily: "Sans-serif", color: "black" }}>About Us !</h2>
                 <h2 style={{ fontFamily: "Sans-serif", textAlign: "center" }}>
-                    Welcome To <span id="W_Name1">Channeltwenty</span>
+                    Welcome To <span id="W_Name1">panchagarh24.com</span>
                 </h2>
                 <p>
-                    <span id="W_Name2">Channeltwenty</span> is a Professional{" "}
+                    <span id="W_Name2">panchagarh24.com</span> is a Professional{" "}
                     <span id="W_Type1">News paper</span> Platform. Here we will only provide
                     you with interesting content that you will enjoy very much. We are
                     committed to providing you the best of{" "}
