@@ -6,7 +6,7 @@ import SkeletonLoader from '../../../components/Utilites/SkeletonLoader';
 
 const CrimeInternational = () => {
     const { data: internationalData, loader: internationalLoader } = useNewsByCategory('international');
-    const { data: crimeData, loader: crimeLoader } = useNewsByCategory('crime');
+    const { data: crimeData, loader: crimeLoader } = useNewsByCategory('national');
 
     if (internationalLoader || crimeLoader) {
         return <SkeletonLoader />

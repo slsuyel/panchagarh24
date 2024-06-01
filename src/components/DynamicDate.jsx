@@ -33,7 +33,7 @@ const DynamicDate = () => {
     return (
         <Card className='p-2 my-3'>
             <div className=' d-flex flex-wrap gap-1 justify-content-center'>
-                <span><i className="fas mx-1 fa-location-dot text-danger"></i> ঢাকা |</span>
+                <span><i className="fas mx-1 fa-location-dot text-danger"></i> পঞ্চগড় |</span>
                 <span><i className=" fa mx-1 fa-calendar text-danger"></i>{formattedDate} |</span>
                 <span> <i className=" fas mx-1 fa-clock text-danger"></i>
                     {formattedTime}</span>

@@ -4,7 +4,7 @@ import DynamicDate from '../../components/DynamicDate';
 const LeftSideAdds = () => {
     return (
         <div className='col-md-3'>
-            <div className="mb-1 mx-auto ps-2 w-100">
+            {/* <div className="mb-1 mx-auto ps-2 w-100">
                 <h3
                     className="border-2 border-bottom border-danger"
                     style={{ paddingLeft: 0 }}
@@ -13,7 +13,7 @@ const LeftSideAdds = () => {
                         CHANNEL TWENTY
                     </span>
                 </h3>
-            </div>
+            </div> */}
 
             <div className='m-auto'>
 

@@ -12,7 +12,7 @@ const CrimeCard = ({ data }) => {
                     style={{ paddingLeft: 0 }}
                 >
                     <span className="fs-5 primary-bg px-2 py-1 text-nowrap text-white">
-                        অপরাধ
+                       জাতীয়
                     </span>
                 </h3>
             </div>

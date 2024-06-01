@@ -23,11 +23,11 @@ const CategoryNavbar = () => {
                     </Link>
                 </li>
 
-                <li className="nav-item" >
+                {/* <li className="nav-item" >
                     <Link className='nav-link text-white'
                         to='/news'> প্রচ্ছদ
                     </Link>
-                </li>
+                </li> */}
                 {reArrCategories.map((category) => (
                     <li className="nav-item" key={category.slug}>
                         {category.children && category.children.length > 0 ? (

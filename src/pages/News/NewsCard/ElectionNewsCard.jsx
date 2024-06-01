@@ -7,8 +7,8 @@ import SkeletonLoader from '../../../components/Utilites/SkeletonLoader';
 
 const ElectionNewsCard = () => {
 
-    const { data: newsData, loader: newsLoader } = useNewsByCategory('news');
-    const { data, loader } = useNewsByCategory('election-news');
+    const { data, loader } = useNewsByCategory('politics');
+    const { data: newsData, loader: newsLoader } = useNewsByCategory('sarades');
 
     if (newsLoader || loader) {
         return <SkeletonLoader />
@@ -17,9 +17,9 @@ const ElectionNewsCard = () => {
 
     return (
         <div className='row w-100 mx-auto my-3'>
-            <SidebarCard data={data} tittle={'নির্বাচন সংবাদ'} />
+            <SidebarCard data={data} tittle={'রাজনীতি'} />
 
-            <Col6Card title={'নিউজ'} data={newsData} />
+            <Col6Card title={'সারাদেশ'} data={newsData} />
 
             <div className='col-md-3'>
                 <NewsTab />

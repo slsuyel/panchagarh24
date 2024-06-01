@@ -132,9 +132,9 @@ const CategoryCanvas = () => {
                 </div>
                 <div className="offcanvas-body mt-1">
                     <ul className="list-unstyled">
-                        <li className='border-bottom border-secondary fs-5 mb-2 text-white'>
+                        {/* <li className='border-bottom border-secondary fs-5 mb-2 text-white'>
                             <Link className='fs-5 mb-2 text-center text-white text-decoration-none' to='/news'>প্রচ্ছদ</Link>
-                        </li>
+                        </li> */}
                         {reArrCategories.map((category) => (
                             <li className='border-bottom border-secondary fs-5 mb-2 text-white' key={category.id}>
                                 {category.children && category.children.length > 0 ? (

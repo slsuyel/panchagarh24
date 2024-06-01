@@ -1,16 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useNewsByCategory from '../../../hooks/useNewsByCategory';
-import SkeletonLoader from '../../../components/Utilites/SkeletonLoader';
 
-const SportsNews = () => {
+const SportsNews = ({data,tittle}) => {
 
-    const { data, loader } = useNewsByCategory('sports');
-
-    if (loader) {
-        return <SkeletonLoader />
-    }
-
+   
+   
 
 
     return (
@@ -21,14 +16,14 @@ const SportsNews = () => {
                     style={{ paddingLeft: 0 }}
                 >
                     <span className="fs-5 primary-bg px-2 py-1 text-nowrap text-white">
-                        খেলাধুলা
+                   {tittle}
                     </span>
                 </h3>
             </div>
 
 
             {
-                data.slice(0, 6).map((news) => <div key={news.id} className='col-md-4 mx-auto mb-2'>
+                data?.slice(0, 6).map((news) => <div key={news.id} className='col-md-4 mx-auto mb-2'>
                     <div>
                         <img src={news.banner} alt="" className='img-fluid'
                         />

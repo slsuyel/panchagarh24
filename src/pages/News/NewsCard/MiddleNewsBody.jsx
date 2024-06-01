@@ -1,12 +1,12 @@
 import React from 'react';
-import MiddleAdd from '../../AddsItems/MiddleAdd';
+// import MiddleAdd from '../../AddsItems/MiddleAdd';
 import { Link } from 'react-router-dom';
 import useNewsByCategory from './../../../hooks/useNewsByCategory';
 import SkeletonLoader from '../../../components/Utilites/SkeletonLoader';
 
 const MiddleNewsBody = () => {
 
-    const { data, loader } = useNewsByCategory('national');
+    const { data, loader } = useNewsByCategory('pncgrer-khbr');
 
     if (loader) {
         return <SkeletonLoader />
@@ -15,7 +15,7 @@ const MiddleNewsBody = () => {
 
     return (
         <div className='col-md-6' style={{ background: '#fbfbfb' }}>
-            <MiddleAdd title={'  R. N. TRADING LIMITED'} />
+            {/* <MiddleAdd title={'  R. N. TRADING LIMITED'} /> */}
 
             <div className="mb-1 mx-auto  w-100" >
                 <h3
@@ -23,7 +23,7 @@ const MiddleNewsBody = () => {
                     style={{ paddingLeft: 0 }}
                 >
                     <span className="fs-5 primary-bg px-2 py-1 text-nowrap text-white">
-                        জাতীয়
+                    পঞ্চগড়ের সংবাদ
                     </span>
                 </h3>
             </div>
